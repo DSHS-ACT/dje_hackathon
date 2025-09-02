@@ -1,4 +1,4 @@
-# 🚀 DJE HACKATHON Website
+# 🚀 DJE-ACT HACK@THON Website 
 
 **2025 대전시 청소년 창업캠프 SW해커톤** 공식 웹사이트
 
