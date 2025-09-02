@@ -1,0 +1,188 @@
+/* PingPong Game Styles */
+.pingpong-container {
+  min-height: 100vh;
+  background: #000000;
+  color: white;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.pingpong-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.back-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  border: 2px solid #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.back-link:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.pingpong-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  font-weight: bold;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.score-item {
+  text-align: center;
+  background: #000000;
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+}
+
+.score-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.score-value {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.game-canvas {
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  background: #000000;
+}
+
+.game-controls {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.game-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  background: #000000;
+  color: #ffffff;
+}
+
+.start-btn:hover,
+.stop-btn:hover,
+.reset-btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.game-instructions {
+  text-align: center;
+  margin-top: 30px;
+  background: #000000;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  max-width: 500px;
+}
+
+.game-instructions h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.game-instructions p {
+  margin: 8px 0;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.game-instructions strong {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pingpong-container {
+    padding: 10px;
+  }
+  
+  .pingpong-title {
+    font-size: 1.8rem;
+  }
+  
+  .scoreboard {
+    gap: 40px;
+  }
+  
+  .game-canvas {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .game-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pingpong-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pingpong-title {
+    font-size: 1.5rem;
+  }
+  
+  .scoreboard {
+    gap: 20px;
+  }
+  
+  .score-item {
+    padding: 10px 20px;
+  }
+  
+  .score-value {
+    font-size: 28px;
+  }
+}
